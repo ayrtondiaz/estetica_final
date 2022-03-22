@@ -1,0 +1,75 @@
+.main-home{
+    background-color: $fondo-oscuro;
+    padding: 30px;
+    .carrusel{        
+        border: 5px white inset;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        align-items: center;
+        z-index: 2;        
+        .carrusel-img{
+        padding: 30px;
+        }
+    }
+    .index-serv{
+        border: 5px black inset;
+        background-color: white;
+        padding: 30px;          
+        .index-servicios-titulo{
+            padding: 20px;
+            background-color: white;
+            h2{
+                color: black;
+                .span-dorado{
+                    color: $color-dorado;
+                    background-color: $fondo-oscuro;
+                }
+            }   
+        }
+        .index-servicios-subtitulo{
+            padding-top: 10px;
+            h2{
+                color: black;
+            }            
+            }
+        }
+    .mas-servicio{
+        border: 5px $color-dorado inset;
+        padding: 30px;       
+
+    }
+    .card{
+        padding-top: 15em;
+        text-align: center;        
+        color: white;
+        padding: 20px;
+        border: 5px white dotted;
+        justify-content: center;
+        padding: 10px;   
+        background-image: url("../assets/img/salonsalon.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .card-body{
+            margin-top: 17em;
+        }
+    }
+    .btn{
+        color: black;
+        background-color: $color-dorado-claro;
+        border-radius: 1rem 1rem 1rem 1rem ;
+        font-size: 1.2rem;
+        padding-left: 10px;
+        padding-right: 10px;
+        transition: 0.5s;
+        &:hover{
+            border-radius: 1rem 1rem 1rem 1rem ;
+            font-size: 1.5rem;
+            padding-left: 10px;
+            padding-right: 10px;
+            transition: 0.5s;
+        }
+    }   
+}
+

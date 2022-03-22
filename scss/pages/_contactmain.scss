@@ -1,0 +1,37 @@
+
+
+.contacto{
+    background: $color-dorado-claro;
+    padding: 30px;
+    .titulo-contacto{
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        text-align:center ;
+        font-weight: bold;
+        color: white;
+    }
+    h1{
+        color: black;
+    }
+    .row{
+        .contacto-row{
+            flex-direction: column;
+            align-content: center;
+        }
+        .center{
+            text-align: center;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            .btn-contacto{
+                width: 100%;
+                height: auto; 
+                background-color: black;
+            }
+        }
+        
+    }
+
+}
+

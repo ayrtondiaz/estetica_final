@@ -1,0 +1,202 @@
+.w-150 {
+  width: 150px;
+  height: auto; }
+
+* {
+  font-family: 'Roboto', sans-serif; }
+
+h5, h6 {
+  color: #f0c260; }
+
+h6 {
+  font-size: xx-small; }
+
+h2, h3, h4 {
+  color: #ffebaa; }
+
+h1 {
+  color: #f0c260; }
+
+.impronta-seo {
+  padding: 20px;
+  background-color: black;
+  box-shadow: 0 0 3rem #f0c260; }
+  .impronta-seo .titulo {
+    background-color: #222222; }
+  .impronta-seo .subtitulo {
+    background-color: white;
+    color: black;
+    font-weight: bold; }
+
+body {
+  background-color: #222222; }
+
+.bar {
+  top: 70%;
+  left: 35%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 65%;
+  transition: all 0.5s;
+  z-index: 10000; }
+  .bar .social-icon {
+    padding: 10px;
+    background-color: #222222;
+    border-radius: 1.5rem 0 0 1.5rem;
+    color: #40e940;
+    box-shadow: 0 0 0 5px #f0c260;
+    font-size: 3em;
+    transition: 0.5s; }
+    .bar .social-icon:hover {
+      font-size: 4em;
+      padding-right: 3rem;
+      border-radius: 1rem 0 0 1rem;
+      box-shadow: 0 0 0 5px #f0c260, 0 0 4rem 0px #40e940;
+      transition: all 0.5s;
+      color: #40e940; }
+
+header {
+  top: 0;
+  position: sticky;
+  border: inset 5px #f0c260;
+  z-index: 100; }
+  header nav {
+    background-color: #222222; }
+    header nav li {
+      padding: 20px; }
+      header nav li .nav-link {
+        color: #ffebaa; }
+        header nav li .nav-link:hover {
+          color: whitesmoke; }
+    header nav .navbar-dark {
+      color: #f0c260; }
+
+footer {
+  background-color: #222222;
+  border: inset 5px #f0c260;
+  padding: 20px; }
+  footer .social-icon {
+    color: #f0c260;
+    font-size: 2em;
+    transition: 0.5s; }
+    footer .social-icon:hover {
+      font-size: 3em;
+      filter: drop-shadow(0 0 20px #f0c260); }
+
+.main-home {
+  background-color: #222222;
+  padding: 30px; }
+  .main-home .carrusel {
+    border: 5px white inset;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    align-items: center;
+    z-index: 2; }
+    .main-home .carrusel .carrusel-img {
+      padding: 30px; }
+  .main-home .index-serv {
+    border: 5px black inset;
+    background-color: white;
+    padding: 30px; }
+    .main-home .index-serv .index-servicios-titulo {
+      padding: 20px;
+      background-color: white; }
+      .main-home .index-serv .index-servicios-titulo h2 {
+        color: black; }
+        .main-home .index-serv .index-servicios-titulo h2 .span-dorado {
+          color: #f0c260;
+          background-color: #222222; }
+    .main-home .index-serv .index-servicios-subtitulo {
+      padding-top: 10px; }
+      .main-home .index-serv .index-servicios-subtitulo h2 {
+        color: black; }
+  .main-home .mas-servicio {
+    border: 5px #f0c260 inset;
+    padding: 30px; }
+  .main-home .card {
+    padding-top: 15em;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border: 5px white dotted;
+    justify-content: center;
+    padding: 10px;
+    background-image: url("../assets/img/salonsalon.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .main-home .card .card-body {
+      margin-top: 17em; }
+  .main-home .btn {
+    color: black;
+    background-color: #ffebaa;
+    border-radius: 1rem 1rem 1rem 1rem;
+    font-size: 1.2rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.5s; }
+    .main-home .btn:hover {
+      border-radius: 1rem 1rem 1rem 1rem;
+      font-size: 1.5rem;
+      padding-left: 10px;
+      padding-right: 10px;
+      transition: 0.5s; }
+
+.main-serv {
+  background-color: white; }
+  .main-serv section {
+    padding: 30px;
+    border: 5px black inset; }
+    .main-serv section .titulo-serv {
+      background-color: white; }
+      .main-serv section .titulo-serv h3 {
+        color: black;
+        font-weight: bold; }
+    .main-serv section .subtitulo-serv {
+      background-color: #222222;
+      padding: 10px; }
+
+.main-nosotros {
+  padding: 30px; }
+  .main-nosotros .nosotros {
+    padding-top: 4rem;
+    color: white; }
+    .main-nosotros .nosotros h4 {
+      color: white; }
+
+.main-ubicacion {
+  padding: 30px; }
+  .main-ubicacion .ubicacion {
+    padding-top: 30px;
+    color: white; }
+    .main-ubicacion .ubicacion h3 {
+      color: white;
+      padding: 20px; }
+
+.contacto {
+  background: #ffebaa;
+  padding: 30px; }
+  .contacto .titulo-contacto {
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    color: white; }
+  .contacto h1 {
+    color: black; }
+  .contacto .row .contacto-row {
+    flex-direction: column;
+    align-content: center; }
+  .contacto .row .center {
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center; }
+    .contacto .row .center .btn-contacto {
+      width: 100%;
+      height: auto;
+      background-color: black; }

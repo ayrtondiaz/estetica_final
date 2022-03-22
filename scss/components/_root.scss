@@ -1,0 +1,36 @@
+.w-150{
+    width: 150px;
+    height: auto;
+}
+
+*{font-family: 'Roboto', sans-serif;}
+
+h5, h6 {
+    color: $color-dorado;
+}
+h6{
+    font-size: xx-small;
+}
+h2, h3, h4{
+    color:rgb(255, 235, 170);
+}
+h1{
+    color:$color-dorado;
+}
+.impronta-seo{
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0 0 3rem $color-dorado;
+    .titulo{
+        background-color: $fondo-oscuro;
+    }
+    .subtitulo{
+        background-color: white;
+        color: black;
+        font-weight: bold;
+
+    }
+}
+body{
+    background-color: $fondo-oscuro;
+}

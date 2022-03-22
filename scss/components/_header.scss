@@ -1,0 +1,21 @@
+header{
+    top:0;
+    position: sticky;
+    border: inset 5px $color-dorado;
+    nav{
+        background-color: $fondo-oscuro;
+        li{
+            padding: 20px;
+            .nav-link{
+                color: $color-dorado-claro;
+                &:hover{
+                    color: whitesmoke;
+                }
+            }
+        }
+        .navbar-dark{
+            color: $color-dorado;
+        }
+    }
+    z-index: 100;
+}

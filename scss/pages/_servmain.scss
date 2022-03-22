@@ -1,0 +1,20 @@
+.main-serv{
+    background-color: white;
+    section{
+        padding: 30px;
+        border: 5px black inset;
+        .titulo-serv{
+            background-color: white;
+            h3{
+                color: black;
+                font-weight: bold;
+            } 
+        }
+        .subtitulo-serv{
+            background-color: $fondo-oscuro;
+            padding: 10px;
+        }
+       
+    }
+
+}
