@@ -1,0 +1,17 @@
+.opacidad{
+    animation-name: opacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1.5s;
+}
+.opacidad2{
+	animation-name: opacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+
+}
+@keyframes opacity {
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}

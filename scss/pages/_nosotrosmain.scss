@@ -9,3 +9,487 @@
     }
 
 }
+li{
+    list-style-type: none;
+    
+}
+.contenedor-inicio-nosotros{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+
+
+@media only screen and (min-width: 1024px)
+{
+    /*HEADER*/
+    .grid-header-new{
+        grid-area: header;
+        display: grid;
+        grid-area:
+        "logo nav";
+        grid-template-columns: 55% 45%;
+        grid-template-rows: auto;
+        position: sticky;
+        top: 0;
+        border: inset 5px $color-dorado;
+        background-color: $fondo-oscuro;
+        padding: 10px;
+    }
+    .logoImagen{
+        grid-area: logo;
+    }
+    .grid-nav{
+        grid-area: nav;
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+        color: $color-dorado-claro;
+        &:hover{
+            color: whitesmoke;
+            text-decoration: none;
+        }
+    }
+  
+    /*MAIN NOSOTROS*/
+.grid-main-nosotros{
+    background-color: $fondo-oscuro;
+    grid-area: main;
+    display: grid;
+    grid-template-areas:
+    "titulo"
+    "presentacion"
+    "boton";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    padding: 30px;
+}
+.grid-main-titulo{
+    grid-area: titulo;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+.grid-presentacion-nosotros{
+    grid-area: presentacion;
+    display: grid;
+    grid-template-areas: 
+    "imgnosotros historia";
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto auto;
+    padding: 30px;
+    
+}
+
+.imgNosotros{
+    grid-area: imgnosotros;
+    padding-top: 20px;
+    width: 100%;
+    height: auto;
+
+}
+.grid-card-nosotros{
+    grid-area: historia;
+    display: grid;
+    grid-template-areas: 
+    "titulo"
+    "subtitulo"
+    "pie";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    padding: 30px;
+
+}
+.titulo-nosotros{
+    grid-area: titulo;
+    text-align: center;
+    color: white;
+}
+.subtitulo-nosotros{
+    grid-area: subtitulo;
+    text-align: center;
+    color: white;
+}
+.pie-nosotros{
+    grid-area: pie;
+    text-align: center;
+}
+.boton-nosotros{
+    grid-area: boton;
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    color: black;
+    border-radius: 1rem 1rem 1rem 1rem ;
+    font-size: 1.2rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.5s;
+    &:hover{
+        border-radius: 1rem 1rem 1rem 1rem ;
+        font-size: 1.5rem;
+        padding-left: 10px;
+        padding-right: 10px;
+        transition: 0.5s;
+    }
+    
+}
+
+    /*FOOTER*/
+.grid-footer{
+    grid-area: footer;
+    display: grid;
+    grid-template-areas: 
+    "facebook copy insta";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    padding: 30px;
+}    
+.grid-face{
+    grid-area: facebook;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.grid-copy{
+    grid-area: copy;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.grid-insta{
+    grid-area: insta;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+}
+
+/*Mobile*/
+@media only screen and (max-width: 768px)
+{
+       /*HEADER*/
+       .grid-header-new{
+        grid-area: header;
+        display: grid;
+        grid-area:
+        "logo nav";
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        position: sticky;
+        top: 0;
+        border: inset 5px $color-dorado;
+        background-color: $fondo-oscuro;
+        padding: 10px;
+    }
+    .logoImagen{
+        grid-area: logo;
+    }
+    .grid-nav{
+        grid-area: nav;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        text-decoration: none;
+        color: $color-dorado-claro;
+        &:hover{
+            color: whitesmoke;
+            text-decoration: none;
+        }
+    }
+  
+    /*MAIN NOSOTROS*/
+.grid-main-nosotros{
+    background-color: $fondo-oscuro;
+    grid-area: main;
+    display: grid;
+    grid-template-areas:
+    "titulo"
+    "presentacion"
+    "boton";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    padding: 30px;
+}
+.grid-main-titulo{
+    grid-area: titulo;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+.grid-presentacion-nosotros{
+    grid-area: presentacion;
+    display: grid;
+    grid-template-areas: 
+    "imgnosotros"
+    "historianos";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    padding: 30px;
+    
+}
+
+.imgNosotros{
+    grid-area: imgnosotros;
+    padding-top: 20px;
+    width: 100%;
+    height: auto;
+
+}
+.grid-card-nosotros{
+    grid-area: historianos;
+    display: grid;
+    grid-template-areas: 
+    "titulonos"
+    "subtitulo"
+    "pie";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    padding: 30px;
+    font-size:x-large;
+
+}
+.titulo-nosotros{
+    grid-area: titulonos;
+    text-align: center;
+    color: white;
+}
+
+.subtitulo-nosotros{
+    grid-area: subtitulo;
+    text-align: center;
+    color: white;
+}
+.pie-nosotros{
+    grid-area: pie;
+    text-align: center;
+}
+.boton-nosotros{
+    font-weight: bold;
+    grid-area: boton;
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    color: black;
+    border-radius: 1rem 1rem 1rem 1rem ;
+    font-size: 1.2rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.5s;
+    &:hover{
+        border-radius: 1rem 1rem 1rem 1rem ;
+        font-size: 1.5rem;
+        padding-left: 10px;
+        padding-right: 10px;
+        transition: 0.5s;
+    }
+    
+}
+
+    /*FOOTER*/
+.grid-footer{
+    grid-area: footer;
+    display: grid;
+    grid-template-areas:     
+    "facebook insta" 
+    "copy copy";
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows: auto auto;
+    padding: 30px;
+}    
+.grid-face{
+    grid-area: facebook;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: xx-large;
+}
+.grid-copy{
+    grid-area: copy;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+.grid-insta{
+    grid-area: insta;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: xx-large;
+}
+
+}
+
+/*Tablet*/
+@media only screen and (min-width: 769px) and (max-width: 1023px)
+{  
+    /*HEADER*/
+    .grid-header-new{
+        grid-area: header;
+        display: grid;
+        grid-area:
+        "logo nav";
+        grid-template-columns: 55% 45%;
+        grid-template-rows: auto;
+        position: sticky;
+        top: 0;
+        border: inset 5px $color-dorado;
+        background-color: $fondo-oscuro;
+        padding: 10px;
+    }
+    .logoImagen{
+        grid-area: logo;
+    }
+    .grid-nav{
+        grid-area: nav;
+        display: flex;
+        justify-content: flex-end;
+        text-decoration: none;
+        color: $color-dorado-claro;
+        &:hover{
+            color: whitesmoke;
+            text-decoration: none;
+        }
+    }
+  
+    /*MAIN NOSOTROS*/
+.grid-main-nosotros{
+    background-color: $fondo-oscuro;
+    grid-area: main;
+    display: grid;
+    grid-template-areas:
+    "titulo"
+    "presentacion"
+    "boton";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    padding: 30px;
+}
+.grid-main-titulo{
+    grid-area: titulo;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+.grid-presentacion-nosotros{
+    grid-area: presentacion;
+    display: grid;
+    grid-template-areas: 
+    "imgnosotros"
+    "historianos";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    padding: 30px;
+    
+}
+
+.imgNosotros{
+    grid-area: imgnosotros;
+    padding-top: 20px;
+    width: 100%;
+    height: auto;
+
+}
+.grid-card-nosotros{
+    grid-area: historianos;
+    display: grid;
+    grid-template-areas: 
+    "titulonos"
+    "subtitulo"
+    "pie";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    padding: 30px;
+    font-size:x-large;
+
+}
+.titulo-nosotros{
+    grid-area: titulonos;
+    text-align: center;
+    color: white;
+}
+
+.subtitulo-nosotros{
+    grid-area: subtitulo;
+    text-align: center;
+    color: white;
+}
+.pie-nosotros{
+    grid-area: pie;
+    text-align: center;
+}
+.boton-nosotros{
+    font-weight: bold;
+    grid-area: boton;
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    color: black;
+    border-radius: 1rem 1rem 1rem 1rem ;
+    font-size: 1.2rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.5s;
+    &:hover{
+        border-radius: 1rem 1rem 1rem 1rem ;
+        font-size: 1.5rem;
+        padding-left: 10px;
+        padding-right: 10px;
+        transition: 0.5s;
+    }
+    
+}
+
+    /*FOOTER*/
+.grid-footer{
+    grid-area: footer;
+    display: grid;
+    grid-template-areas: 
+    "facebook copy insta";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    padding: 30px;
+}    
+.grid-face{
+    grid-area: facebook;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: xx-large;
+}
+.grid-copy{
+    grid-area: copy;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.grid-insta{
+    grid-area: insta;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: xx-large;
+}
+}
+
+
+

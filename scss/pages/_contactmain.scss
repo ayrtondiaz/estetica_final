@@ -30,6 +30,14 @@
                 background-color: black;
             }
         }
+        .btn-contacto{
+            font-size: 2em;
+            transition: 0.5s;
+            &:hover{
+                font-size: 3em;
+                filter: drop-shadow(0 0 20px $color-dorado)
+            }
+        }
         
     }
 
