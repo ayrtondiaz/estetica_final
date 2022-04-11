@@ -180,16 +180,9 @@ footer {
       background-color: #222222;
       padding: 10px; }
 
-.main-nosotros {
-  padding: 30px; }
-  .main-nosotros .nosotros {
-    padding-top: 4rem;
-    color: white; }
-    .main-nosotros .nosotros h4 {
-      color: white; }
-
 li {
-  list-style-type: none; }
+  list-style-type: none;
+  color: whitesmoke; }
 
 .contenedor-inicio-nosotros {
   display: grid;
@@ -214,15 +207,17 @@ footer {
     grid-area: header;
     display: grid;
     grid-area: "logo nav";
-    grid-template-columns: 55% 45%;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     position: sticky;
     top: 0;
     border: inset 5px #f0c260;
     background-color: #222222;
-    padding: 10px; }
+    padding: 5px; }
   .logoImagen {
-    grid-area: logo; }
+    grid-area: logo;
+    text-align: center;
+    padding: 10px; }
   .grid-nav {
     grid-area: nav;
     display: flex;
@@ -232,6 +227,8 @@ footer {
     .grid-nav:hover {
       color: whitesmoke;
       text-decoration: none; }
+  .check {
+    display: none; }
   /*MAIN NOSOTROS*/
   .grid-main-nosotros {
     background-color: #222222;
@@ -321,6 +318,43 @@ footer {
 /*Mobile*/
 @media only screen and (max-width: 768px) {
   /*HEADER*/
+  .respmenu a {
+    color: #ffebaa;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    border-bottom: 2px solid #222222;
+    max-width: 200px;
+    background: #222222;
+    font-variant: small-caps;
+    text-shadow: 1px 1px black; }
+  .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 48px;
+    height: 48px; }
+  .respmenu .fa-bars, .respmenu .fa-times {
+    font-size: 48px;
+    pointer-events: none; }
+  .respmenu input[type="checkbox"] {
+    opacity: 0; }
+  .respmenu {
+    color: #f0c260;
+    position: relative;
+    background: #222222;
+    min-height: 48px; }
+  .respmenu nav {
+    display: none; }
+  .respmenu input:checked ~ nav {
+    display: block; }
+  .respmenu input:checked ~ .fa-bars {
+    display: none; }
+  .respmenu input:not(:checked) ~ .fa-times {
+    display: none; }
   .grid-header-new {
     grid-area: header;
     display: grid;
@@ -460,6 +494,8 @@ footer {
     .grid-nav:hover {
       color: whitesmoke;
       text-decoration: none; }
+  .check {
+    display: none; }
   /*MAIN NOSOTROS*/
   .grid-main-nosotros {
     background-color: #222222;
